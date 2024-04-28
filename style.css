@@ -83,4 +83,7 @@ body {
             background-color: #333; /* Dark mode background color */
             color: #f0f0f0; /* Dark mode text color */
         }
+        embed {
+            overflow: hidden;
+        }
     </style>
