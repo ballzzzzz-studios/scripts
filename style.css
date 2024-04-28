@@ -83,8 +83,15 @@ body {
             background-color: #333; /* Dark mode background color */
             color: #f0f0f0; /* Dark mode text color */
         }
-        iframe {
+        .nav {
             overflow-y: none;
             border: none;
+        }
+        .nav::-webkit-scrollbar {
+          display: none;
+        }
+        .nav {
+            -ms-overflow-style: none;  /* IE and Edge */
+             scrollbar-width: none;  /* Firefox */
         }
     </style>
