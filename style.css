@@ -85,6 +85,9 @@
             color: #ffffff; /* Dark mode text color */
             text-align: center;
         }
+        .dark-mode:a {
+            color: #ffffff;
+        }
         .nav {
             overflow: hidden;
             border: none;
