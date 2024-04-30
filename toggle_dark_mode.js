@@ -10,9 +10,11 @@ function toggleDarkMode() {
             const isDarkMode = localStorage.getItem("darkMode") === "true";
             const body = document.body;
             if (isDarkMode) {
-                body.classList.add("dark-mode"); // Apply dark mode class to body
+                 document.getElementById("darkModeToggle").innerHTML = "Disable Dark Mode";
+                 body.classList.add("dark-mode"); // Apply dark mode class to body
             } else {
-                body.classList.remove("dark-mode"); // Remove dark mode class from body
+                 document.getElementById("darkModeToggle").innerHTML = "Enable Dark Mode";
+                 body.classList.remove("dark-mode"); // Remove dark mode class from body
             }
         }
 
