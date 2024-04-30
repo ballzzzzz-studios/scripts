@@ -1,9 +1,3 @@
-function applyDarkModeToOtherScripts(isDarkMode) {
-    // Implement logic here to apply dark mode to other scripts
-    // For example, you can traverse the DOM and adjust styles or settings
-    console.log("Applying dark mode to other scripts:", isDarkMode ? "enabled" : "disabled");
-}
-
 // Function to apply dark mode based on localStorage preference
 function applyDarkModeFromLocalStorage() {
     const isDarkMode = localStorage.getItem("darkMode") === "true";
