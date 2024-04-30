@@ -86,7 +86,13 @@
             text-align: center;
         }
         .dark-mode:a {
-            color: #ffffff;
+            text-color: #ffffff;
+        }
+        .dark-mode:nav {
+            background-color: #0FFFFF;
+            text-align: center;
+            margin: 10px;
+            padding: 10px;
         }
         .nav {
             overflow: hidden;
