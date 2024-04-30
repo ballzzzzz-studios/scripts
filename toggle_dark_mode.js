@@ -5,6 +5,9 @@ function toggleDarkMode() {
     const isDarkMode = body.classList.contains("dark-mode");
     // Save user preference to localStorage
     localStorage.setItem("darkMode", isDarkMode);
+    
+    // Redirect to the settings page
+    window.location.href = "/settings";
 }
 
 // Function to apply dark mode based on localStorage preference
@@ -26,8 +29,4 @@ applyDarkModeFromLocalStorage();
 // Add event listener to the toggle button
 document.getElementById("darkModeToggle").addEventListener("click", function() {
     toggleDarkMode();
-    applyDarkModeFromLocalStorage(); // Update the text of the toggle button
 });
-
-// Continuous check and update of dark mode state
-setInterval(applyDarkModeFromLocalStorage, 1000); // Check every second (adjust as needed)
